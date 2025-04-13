@@ -1,2 +1,2 @@
 # mohan.io
-this is my profilev webpage
+this is my profile webpage
