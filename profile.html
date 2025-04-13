@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mohan's Professional Profile</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+    <style>
+        /* Reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background: linear-gradient(to right, #111, #222);
+            color: #e0e0e0;
+            padding: 40px 20px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .profile-img {
+            width: 140px;
+            height: 140px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid #888;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            font-size: 2.8rem;
+            font-weight: 700;
+            color: #ccc;
+            margin-bottom: 10px;
+            text-align: center;
+        }
+
+        h2 {
+            font-size: 1.8rem;
+            font-weight: 600;
+            color: #aaa;
+            margin-top: 40px;
+            margin-bottom: 20px;
+            text-align: center;
+        }
+
+        p {
+            font-size: 1.05rem;
+            line-height: 1.7;
+            max-width: 800px;
+            margin: 0 auto 20px;
+            color: #d0d0d0;
+            text-align: justify;
+        }
+
+        .skills-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+            gap: 20px;
+            width: 100%;
+            max-width: 900px;
+            margin-top: 20px;
+        }
+
+        .skills-box {
+            background: #333;
+            padding: 20px;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+            text-align: center;
+            font-weight: 600;
+            font-size: 1.05rem;
+            color: #fff;
+        }
+
+        .contact-container {
+            background: #1a1a1a;
+            border: 1px solid #444;
+            border-radius: 12px;
+            padding: 30px;
+            width: 100%;
+            max-width: 800px;
+            margin-top: 50px;
+            text-align: center;
+        }
+
+        .contact-container a {
+            color: #888;
+            text-decoration: none;
+        }
+
+        .contact-container a:hover {
+            text-decoration: underline;
+        }
+
+        .footer {
+            margin-top: auto;
+            padding: 20px;
+            font-size: 0.9rem;
+            color: #777;
+        }
+
+        @media (max-width: 600px) {
+            h1 {
+                font-size: 2.2rem;
+            }
+
+            h2 {
+                font-size: 1.5rem;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <img src="pic.jpg" alt="Mohan's Photo" class="profile-img" />
+
+    <h1>Mohan Magesh</h1>
+    <h2>About Me</h2>
+    <p>
+        I am a first-year Computer Science Engineering student at LICET with a strong interest in software development and artificial intelligence. I am currently focused on developing a solid foundation in programming, algorithms, and real-world problem-solving. I actively explore Python, Java, and C++, and stay updated with the latest advancements in the tech industry.
+    </p>
+
+    <h2>Technical Skills</h2>
+    <div class="skills-container">
+        <div class="skills-box">Python</div>
+        <div class="skills-box">Java</div>
+        <div class="skills-box">C</div>
+        <div class="skills-box">HTML & CSS</div>
+        <div class="skills-box">JavaScript</div>
+    </div>
+
+    <div class="contact-container">
+        <h2>Contact Information</h2>
+        <p><strong>Email:</strong> <a href="mailto:mastermohan999@gmail.com">mastermohan999@gmail.com</a></p>
+        <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/mohan-magesh-5a5bab334/" target="_blank">linkedin.com/in/mohan-magesh</a></p>
+        <p><strong>GitHub:</strong> <a href="https://github.com/mohan26122005" target="_blank">github.com/mohan26122005</a></p>
+    </div>
+
+    <div class="footer">
+        &copy; 2025 Mohan Magesh. All rights reserved.
+    </div>
+
+    <script>
+        // Disable context menu
+        document.addEventListener('contextmenu', function (e) {
+            e.preventDefault();
+        });
+
+        // Disable Print Screen key
+        document.addEventListener('keydown', function (e) {
+            if (e.key === 'PrintScreen') {
+                e.preventDefault();
+            }
+        });
+    </script>
+</body>
+
+</html>
